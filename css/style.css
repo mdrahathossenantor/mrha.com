@@ -9,17 +9,19 @@ a{
     text-decoration: none;
 }
 
-/* Header */
 /* Navigation */
 .navbar-brand{
     font-size: 1.6rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
-    color: #4e4e4e;
+    color: #fc5b49dc;
     padding: 0;
 }
+.navbar-brand:hover{
+    color: #FC5B49;
+}
 .active{
-    color: #1abb9c !important;
+    color: #FC5B49 !important;
 }
 .nav-link{
     color: #4e4e4e;
@@ -28,11 +30,9 @@ a{
     transition: all linear 0.3s;
 }
 .nav-link:hover{
-    color: #1abb9c;
+    color: #FC5B49;
     transition: all linear 0.3s;
 }
-/* Navigation */
-/* Header */
 
 /* Banner */
 #banner{
@@ -52,7 +52,7 @@ a{
     margin-bottom: 16px;
 }
 .banner_txt h4{
-    color: #a8a8a8;
+    color: #e3e3e3;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
 }
@@ -66,49 +66,38 @@ a{
     transition: all linear 0.3s;
 }
 .banner_txt a:hover{
-    background-color: #3f8dbf;
-    border: 1px solid #3f8dbf;
+    background-color: #FC5B49;
+    border: 1px solid #FC5B49;
     transition: all linear 0.3s;
 }
-/* Banner */
 
-/* body{
-    background: url("../images/background.jpg") no-repeat;
-    background-size: cover;
-}
-.navbar-brand img{
-    width: 50px;
-}
-.nav-item{
-    font-size: 2.2rem;
-    padding: 0 0.5rem;
-}
-.banner-content{
-    margin: 90px 0 0 0;
-}
-.banner-content h1{
-    font-size: 4.2rem;
-    font-family: 'PT Serif', serif;
-}
-.banner-content h3{
-    font-size: 2.5rem;
-    font-family: 'Chivo Mono', monospace;
-}
-.banner-text{
-    padding: 4rem 0 4rem 0;
-}
-.banner-content p{
-    font-size: 1.1rem;
+/* Projects */
+.demo_head h3{
     color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-} */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    margin: 60px 0 25px 0;
+}
+.demo_img_content h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    margin-top: 25px;
+    color: white;
+}
+.demo_img_content p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 60px;
+}
 
+/* Others */
 body{
-    background-color: black;
+    background-color: #180C1A;
 }
 footer{
     color: white;
-    background-color: black;
+    background-color: #180C1A;
 }
 .footer-content h4{
     font-size: 3rem;
@@ -122,51 +111,27 @@ footer{
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 320px) and (max-width: 575px){
-    /* .navbar-brand img{
-        width: 40px;
-    }
-    .nav-item{
-        font-size: 1.8rem;
-        padding: 0 0.4rem;
-    }
-    .hide-icon{
-        display: none;
-    }
-    .navigation-menu{
-        display: flex;
-        flex-direction: row;
-    }
-    .banner-content{
-        margin: 60px 0 0 0;
-    }
-    .banner-content h1{
-        font-size: 2.5rem;
-        margin-bottom: 0;
-    }
-    .banner-content h3{
-        font-size: 1.3rem;
-    }
-    .hide{
-        display: none;
-    }
-    .footer-content h4{
-        font-size: 2rem;
-        margin: 1rem 0 2.5rem 0;
-    } */
-
     .nav-link {
-        font-size: 14px;
+        font-size: 15px;
+        padding: 4px 0;
     }
-    /* Banner part start */
+    .active{
+        padding-top: 12px;
+    }
+
+    /* Banner */
     .banner_txt {
         padding: 60px 0;
         text-align: left;
     }
+    .banner_txt h4{
+        font-size: 1rem;
+    }
     .banner_txt a {
         font-size: 12px;
         padding: 9px 13px;
-        background-color: #3f8dbf;
-        border: #3f8dbf;
+        background-color: #FC5B49;
+        border: #FC5B49;
     }
     .banner_txt a:hover{
         font-size: 12px;
@@ -174,44 +139,18 @@ footer{
         background-color: #3f8dbf;
         border: #3f8dbf;
     }
-    /* Banner part end */
+
+    .footer-content h4{
+        font-size: 2rem;
+    }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px){
-    /* .navbar-brand img{
-        width: 45px;
-    }
-    .nav-item{
-        font-size: 2rem;
-        padding: 0 0.7rem;
-    }
-    .navigation-menu{
-        display: flex;
-        flex-direction: row;
-    }
-    .banner-content{
-        margin: 70px 0 0 0;
-    }
-    .banner-content h1{
-        font-size: 2.7rem;
-        margin-bottom: 0;
-    }
-    .banner-content h3{
-        font-size: 1.4rem;
-    }
-    .hide{
-        display: none;
-    }
-    .footer-content h4{
-        font-size: 2.1rem;
-        margin: 1rem 0 2.5rem 0;
-    } */
-
     .nav-link {
         font-size: 17px;
     }
-    /* Banner part start */
+    /* Banner */
     .banner_txt {
         padding: 80px 0;
         text-align: left;
@@ -233,27 +172,6 @@ footer{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px){
-    /* .navbar-brand img{
-        width: 45px;
-    }
-    .nav-item{
-        font-size: 2.1rem;
-        padding: 0 0.8rem;
-    }
-    .navigation-menu{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .banner-content{
-        margin: 70px 0 0 0;
-    }
-    .banner-content h1{
-        font-size: 3rem;
-        margin-bottom: 0;
-    }
-    .banner-content h3{
-        font-size: 1.6rem;
-    } */
     .footer-content h4{
         font-size: 2.5rem;
         margin: 1rem 0 2.5rem 0;
