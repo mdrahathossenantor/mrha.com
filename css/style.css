@@ -78,6 +78,9 @@ a{
     font-weight: 700;
     margin: 60px 0 25px 0;
 }
+.demo_img img{
+    height: 250px;
+}
 .demo_img_content h4{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -89,6 +92,30 @@ a{
     font-weight: 400;
     color: white;
     margin-bottom: 60px;
+}
+.demo_img{
+    position: relative;
+}
+.work_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+.work_overlay h5,
+.work_overlay p{
+    color: white;
+}
+.demo_img:hover .work_overlay{
+    transform: scale(1);
+    transition: all linear 0.3s;
 }
 
 /* Others */
@@ -139,7 +166,9 @@ footer{
         background-color: #3f8dbf;
         border: #3f8dbf;
     }
-
+    .demo_img img{
+        height: 225px;
+    }
     .footer-content h4{
         font-size: 2rem;
     }
@@ -149,6 +178,10 @@ footer{
 @media (min-width: 576px) and (max-width: 767px){
     .nav-link {
         font-size: 17px;
+        padding: 4px 0;
+    }
+    .active{
+        padding-top: 13px;
     }
     /* Banner */
     .banner_txt {
@@ -158,31 +191,52 @@ footer{
     .banner_txt a {
         font-size: 15px;
         padding: 10px 21px;
-        background-color: #3f8dbf;
-        border: #3f8dbf;
+        background-color: #FC5B49;
+        border: #FC5B49;
     }
     .banner_txt a:hover{
         font-size: 15px;
-        padding: 12px 17px;
+        padding: 10px 21px;
         background-color: #3f8dbf;
         border: #3f8dbf;
     }
     /* Banner part end */
+    .demo_img img{
+        height: 195px;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px){
+    .nav-link {
+        font-size: 17px;
+        padding: 4px 0;
+    }
+    .active{
+        padding-top: 15px;
+    }
     .footer-content h4{
         font-size: 2.5rem;
         margin: 1rem 0 2.5rem 0;
     }
+    .demo_img img{
+        height: 245px;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) and (max-width: 1199px){} */
+@media (min-width: 992px) and (max-width: 1199px){
+    .demo_img img{
+        height: 230px;
+    }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) and (max-width: 1399px){} */
+@media (min-width: 1200px) and (max-width: 1399px){
+    .demo_img img{
+        height: 240px;
+    }
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 /* @media (min-width: 1400px) {} */
