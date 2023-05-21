@@ -1,10 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Nanum+Gothic&family=PT+Serif&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     outline: 0;
 }
-body{
+a{
+    text-decoration: none;
+}
+
+/* Header */
+/* Navigation */
+.navbar-brand{
+    font-size: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    color: #4e4e4e;
+    padding: 0;
+}
+.active{
+    color: #1abb9c !important;
+}
+.nav-link{
+    color: #4e4e4e;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    transition: all linear 0.3s;
+}
+.nav-link:hover{
+    color: #1abb9c;
+    transition: all linear 0.3s;
+}
+/* Navigation */
+/* Header */
+
+/* Banner */
+#banner{
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner_txt{
+    padding: 175px 0;
+    text-align: center;
+}
+.banner_txt h1{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.banner_txt h4{
+    color: #a8a8a8;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+.banner_txt a {
+    color: white;
+    padding: 9px 27px;
+    border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+.banner_txt a:hover{
+    background-color: #3f8dbf;
+    border: 1px solid #3f8dbf;
+    transition: all linear 0.3s;
+}
+/* Banner */
+
+/* body{
     background: url("../images/background.jpg") no-repeat;
     background-size: cover;
 }
@@ -33,6 +101,14 @@ body{
     font-size: 1.1rem;
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
+} */
+
+body{
+    background-color: black;
+}
+footer{
+    color: white;
+    background-color: black;
 }
 .footer-content h4{
     font-size: 3rem;
@@ -43,11 +119,10 @@ body{
     font-family: 'Chivo Mono', monospace;
 }
 
-
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 320px) and (max-width: 575px){
-    .navbar-brand img{
+    /* .navbar-brand img{
         width: 40px;
     }
     .nav-item{
@@ -77,12 +152,34 @@ body{
     .footer-content h4{
         font-size: 2rem;
         margin: 1rem 0 2.5rem 0;
+    } */
+
+    .nav-link {
+        font-size: 14px;
     }
+    /* Banner part start */
+    .banner_txt {
+        padding: 60px 0;
+        text-align: left;
+    }
+    .banner_txt a {
+        font-size: 12px;
+        padding: 9px 13px;
+        background-color: #3f8dbf;
+        border: #3f8dbf;
+    }
+    .banner_txt a:hover{
+        font-size: 12px;
+        padding: 9px 13px;
+        background-color: #3f8dbf;
+        border: #3f8dbf;
+    }
+    /* Banner part end */
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px){
-    .navbar-brand img{
+    /* .navbar-brand img{
         width: 45px;
     }
     .nav-item{
@@ -109,12 +206,34 @@ body{
     .footer-content h4{
         font-size: 2.1rem;
         margin: 1rem 0 2.5rem 0;
+    } */
+
+    .nav-link {
+        font-size: 17px;
     }
+    /* Banner part start */
+    .banner_txt {
+        padding: 80px 0;
+        text-align: left;
+    }
+    .banner_txt a {
+        font-size: 15px;
+        padding: 10px 21px;
+        background-color: #3f8dbf;
+        border: #3f8dbf;
+    }
+    .banner_txt a:hover{
+        font-size: 15px;
+        padding: 12px 17px;
+        background-color: #3f8dbf;
+        border: #3f8dbf;
+    }
+    /* Banner part end */
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px){
-    .navbar-brand img{
+    /* .navbar-brand img{
         width: 45px;
     }
     .nav-item{
@@ -134,7 +253,7 @@ body{
     }
     .banner-content h3{
         font-size: 1.6rem;
-    }
+    } */
     .footer-content h4{
         font-size: 2.5rem;
         margin: 1rem 0 2.5rem 0;
