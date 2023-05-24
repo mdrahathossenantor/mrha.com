@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Nanum+Gothic&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -10,6 +11,12 @@ a{
 }
 
 /* Navigation */
+.sticky-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .navbar-brand{
     font-size: 1.6rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -42,7 +49,7 @@ a{
     background-size: cover;
 }
 .banner_txt{
-    padding: 175px 0;
+    padding: 230px 0 160px 0;
     text-align: center;
 }
 .banner_txt h1{
@@ -69,6 +76,43 @@ a{
     background-color: #FC5B49;
     border: 1px solid #FC5B49;
     transition: all linear 0.3s;
+}
+
+/* Features */
+.features_content{
+    margin-top: 4rem;
+    text-align: center;
+}
+.features_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features_icon p{
+    font-size: 30px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features_icon.first-icon p{
+    background-color: #399AF9;
+}
+.features_icon.second-icon p{
+    background-color: #FE4268;
+}
+.features_icon.third-icon p{
+    background-color: #5b43bd;
+}
+.features_icon.fourth-icon p{
+    background-color: #F9A540;
+}
+.features_text h4{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
 }
 
 /* Projects */
@@ -126,10 +170,24 @@ footer{
     color: white;
     background-color: #180C1A;
 }
-.footer-content h4{
+footer .welcome{
     font-size: 3rem;
     font-family: 'PT Serif', serif;
     margin: 2rem 0 2.5rem 0;
+}
+.footer-links{
+    margin: 60px 0 40px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer_list ul{
+    padding: 0;
+}
+.footer_list ul li{
+    list-style-type: none;
+}
+.footer_list ul li a{
+    color: white;
+    font-size: 14px;
 }
 .footer-content p{
     font-family: 'Chivo Mono', monospace;
@@ -145,10 +203,9 @@ footer{
     .active{
         padding-top: 12px;
     }
-
     /* Banner */
     .banner_txt {
-        padding: 60px 0;
+        padding: 150px 0 3.5rem 0;
         text-align: left;
     }
     .banner_txt h4{
@@ -166,11 +223,21 @@ footer{
         background-color: #3f8dbf;
         border: #3f8dbf;
     }
+    .features_text p {
+        margin-bottom: 0;
+    }
     .demo_img img{
         height: 225px;
     }
-    .footer-content h4{
-        font-size: 2rem;
+    footer .welcome {
+        font-size: 30px;
+        margin: 1.5rem 0 2rem 0;
+    }
+    .hidden-lists{
+        display: none;
+    }
+    .about-dev{
+        display: none;
     }
 }
 
@@ -185,7 +252,7 @@ footer{
     }
     /* Banner */
     .banner_txt {
-        padding: 80px 0;
+        padding: 145px 0 80px 0;
         text-align: left;
     }
     .banner_txt a {
@@ -215,24 +282,42 @@ footer{
     .active{
         padding-top: 15px;
     }
-    .footer-content h4{
-        font-size: 2.5rem;
-        margin: 1rem 0 2.5rem 0;
+    .banner_txt {
+        padding: 185px 0 70px 0;
+    }
+    .hidden-icon{
+        display: none;
     }
     .demo_img img{
         height: 245px;
+    }
+    .hidden-lists{
+        display: none;
+    }
+    .footer-content h4{
+        font-size: 2.5rem;
+        margin: 1rem 0 2.5rem 0;
     }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px){
+    .banner_txt {
+        padding: 230px 0 80px 0;
+    }
     .demo_img img{
         height: 230px;
+    }
+    .hidden-lists{
+        display: none;
     }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399px){
+    .banner_txt {
+        padding: 230px 0 120px 0;
+    }
     .demo_img img{
         height: 240px;
     }

@@ -1,8 +1,5 @@
-console.clear();
-console.log("version 2.0 mountains");
-
 // Creating a digital clock
-let span = document.getElementById("time")
+// let span = document.getElementById("time")
 
 function formateTime(time) {
     if (time < 10) {
@@ -19,5 +16,5 @@ function showTime() {
     let clock = `${hours}:${minutes}:${seconds}`
     span.innerHTML = clock
 }
-showTime()
-window.setInterval(showTime, 1000)
+// showTime()
+// window.setInterval(showTime, 1000)
