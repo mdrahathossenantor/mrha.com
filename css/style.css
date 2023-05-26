@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -98,25 +99,25 @@ a{
     justify-content: center;
 }
 .features_icon.first-icon p{
-    background-color: #399AF9;
+    background-color: #4285F4;
 }
 .features_icon.second-icon p{
-    background-color: #FE4268;
+    background-color: #DB4437;
 }
 .features_icon.third-icon p{
-    background-color: #5b43bd;
+    background-color: #F4B400;
 }
 .features_icon.fourth-icon p{
-    background-color: #F9A540;
+    background-color: #0F9D58;
 }
-.features_text h4{
+.features_text h5{
     color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
 }
 
 /* Projects */
-.demo_head h3{
+.demo_head h2{
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
@@ -187,10 +188,13 @@ footer .welcome{
 }
 .footer_list ul li a{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 .footer-content p{
     font-family: 'Chivo Mono', monospace;
+}
+.about-dev h5{
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* // X-Small devices (portrait phones, less than 576px)
