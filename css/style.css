@@ -191,6 +191,11 @@ footer .welcome{
     font-size: 16px;
 }
 .about-dev h5{
+    border: 1px solid white;
+    padding: 8px 5px 5px 5px;
+    display: inline-block;
+    background-color: white;
+    color: #fc5b49dc;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .footer-content small{
