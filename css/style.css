@@ -191,8 +191,7 @@ footer .welcome{
     font-size: 16px;
 }
 .about-dev h5{
-    border: 1px solid white;
-    padding: 8px 5px 5px 5px;
+    padding: 7px 5px 5px 5px;
     display: inline-block;
     background-color: white;
     color: #fc5b49dc;
@@ -279,6 +278,9 @@ footer .welcome{
     /* Banner part end */
     .demo_img img{
         height: 195px;
+    }
+    .about-dev{
+        margin-top: 15px;
     }
 }
 
